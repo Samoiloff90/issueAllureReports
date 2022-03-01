@@ -4,7 +4,6 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static samoiloff90.github.io.TestData.urlRepo;
 
-
 public class PureSelenideWithListenerTest extends TestBase{
 
     @Test
