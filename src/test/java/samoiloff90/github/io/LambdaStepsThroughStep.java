@@ -8,7 +8,7 @@ import static samoiloff90.github.io.TestData.urlRepo;
 
 public class LambdaStepsThroughStep extends TestBase{
     @Test
-    public void testLambdaSteps() {
+    public void TestLambdaSteps() {
         step ("Ищем репозиторий " + urlRepo, () -> {
             $(".header-search-input").setValue(urlRepo).pressEnter();
             $("a[href*='Samoiloff90/junitForDns']").click();
