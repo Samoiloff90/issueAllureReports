@@ -17,4 +17,12 @@ public class LambdaStepsThroughStep extends TestBase{
             $("[data-content='Issues']").shouldHave(text("Issues"));
         });
     }
+
+    @Test
+    public void testAnnotatedSteps() {
+        StepsWithStepAnnotation step = new StepsWithStepAnnotation();
+
+        step.searchForRepository(urlRepo);
+        step.takeScreenshot();
+    }
 }
