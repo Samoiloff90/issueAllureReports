@@ -25,9 +25,4 @@ public class PureSelenideWithListenerTest extends TestBase{
         $x("//a[text()='Enterprise']").click();
         $x("//h1[text()='Build like the best']").shouldHave(text("Build like the best"));
     }
-
-
-
-
-
 }
