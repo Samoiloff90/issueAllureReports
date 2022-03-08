@@ -13,7 +13,6 @@ import static com.codeborne.selenide.Selenide.$;
 public class StepsWithStepAnnotation extends TestBase {
     @Step("Ищем репозиторий {repo}")
     public void searchForRepository(String repo) {
-        SelenideLogger.addListener("allure", new AllureSelenide());
         $(".header-search-input").setValue(repo).pressEnter();
         $(By.linkText(repo)).click();
     }
