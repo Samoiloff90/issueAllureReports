@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 import static samoiloff90.github.io.TestData.urlRepo;
 
-public class PureSelenideWithListenerTest extends TestBase{
+public class PureSelenideWithListenerTest extends TestBaseListener{
 
     @Test
     public void testIssueSearch() {
